@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutHero() {
   return (
@@ -16,12 +16,13 @@ export default function AboutHero() {
           About Us
         </h1>
         <p className="text-xl text-muted-foreground">
-          UDDHESHYA STUDIO is a forward-thinking marketing agency that combines creativity, data-driven strategies, and
-          cutting-edge technology to deliver exceptional results for our clients.
+          UDDHESHYA STUDIO is a forward-thinking marketing agency that combines
+          creativity, data-driven strategies, and cutting-edge technology to
+          deliver exceptional results for our clients.
         </p>
         <p className="text-xl text-muted-foreground mt-4">
-          Founded in 2015, we've grown from a small team of passionate marketers to a full-service agency with expertise
-          across all digital channels.
+          Founded in 2025, we've grown from a small team of passionate marketers
+          to a full-service agency with expertise across all digital channels.
         </p>
       </motion.div>
 
@@ -40,5 +41,5 @@ export default function AboutHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
       </motion.div>
     </div>
-  )
+  );
 }

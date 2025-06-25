@@ -194,9 +194,9 @@ export default function HeroSection() {
               className="grid grid-cols-3 gap-6 mb-8"
             >
               {[
-                { number: "500+", label: "Projects" },
-                { number: "50+", label: "Clients" },
-                { number: "8+", label: "Years" },
+                { number: "40+", label: "Projects" },
+                { number: "20+", label: "Clients" },
+                { number: "10+", label: "Services" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -264,44 +264,8 @@ export default function HeroSection() {
                   />
 
                   {/* Premium center logo */}
-                  {/* <div className="absolute inset-0 flex items-center justify-center">
-                    <img src="image.png" alt="" />
-                  </div> */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <motion.div
-                      className="w-32 h-32 bg-white rounded-full shadow-2xl flex items-center justify-center relative overflow-hidden"
-                      whileHover={{
-                        scale: 1.1,
-                        boxShadow: "0 25px 50px rgba(39, 41, 92, 0.3)",
-                      }}
-                      animate={{
-                        boxShadow: [
-                          "0 10px 30px rgba(39, 41, 92, 0.2)",
-                          "0 20px 40px rgba(39, 41, 92, 0.3)",
-                          "0 10px 30px rgba(39, 41, 92, 0.2)",
-                        ],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Number.POSITIVE_INFINITY,
-                      }}
-                    >
-                      <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold text-2xl">
-                          US
-                        </span>
-                      </div>
-                      {/* Shine effect */}
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                        animate={{ x: ["-100%", "100%"] }}
-                        transition={{
-                          duration: 2,
-                          repeat: Number.POSITIVE_INFINITY,
-                          repeatDelay: 3,
-                        }}
-                      />
-                    </motion.div>
+                    <img src="short.png" alt="" />
                   </div>
                 </div>
               </motion.div>

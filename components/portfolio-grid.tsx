@@ -1,87 +1,181 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function PortfolioGrid() {
-  const categories = ["All", "Branding", "Digital Marketing", "Web Design", "Social Media", "Content Creation"]
-  const [activeCategory, setActiveCategory] = useState("All")
+  const categories = [
+    "All",
+    "Events",
+    "Education",
+    "Hospitality",
+
+    "Artist Management",
+    "Business Development",
+  ];
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
     {
       id: 1,
-      title: "TechVision Rebrand",
-      category: "Branding",
-      image: "/placeholder.svg?height=600&width=800&text=TechVision+Rebrand",
-      tags: ["Brand Identity", "Logo Design", "Brand Guidelines"],
+      title: "Prateek Kuhad Silhouettes Tour",
+      category: "Events",
+      image: "/prateek.jpeg?height=600&width=800&text=TechVision+Rebrand",
+      tags: ["Concert", "Event Management"],
       description:
-        "A complete brand overhaul for TechVision, a leading technology company. We created a modern, forward-thinking visual identity that reflects their innovative approach to technology solutions.",
+        "Prateek Kuhad's Silhouettes Tour in Nepal took place on October 26, 2024, at The Everest Hotel in Kathmandu. The concert featured his soulful indie-folk and acoustic music, including hits like Cold Mess, Kasoor, and Tum Jab Paas, alongside new tracks such as Mulaqat and I'm Someone New. Organized by Eleven11 and Khalti Events, the event offered fans an intimate musical experience.",
       results:
-        "The rebrand resulted in a 40% increase in brand recognition and a 25% boost in customer engagement within the first quarter.",
+        "Prateek Kuhad's Silhouettes Tour in Kathmandu delivered an intimate evening of soulful music, captivating fans with heartfelt performances.",
     },
     {
       id: 2,
-      title: "EcoLife E-commerce",
-      category: "Web Design",
-      image: "/placeholder.svg?height=600&width=800&text=EcoLife+E-commerce",
-      tags: ["UI/UX Design", "E-commerce", "Responsive Design"],
+      title: "Bachelor of Aviation Management (BAM)",
+      category: "Education",
+      image: "/BAM.jpeg?height=600&width=800&text=EcoLife+E-commerce",
+      tags: ["Aviation", "Kathmandu University", "Siddhartha Vansthali"],
       description:
-        "Designed and developed a fully responsive e-commerce website for EcoLife, a sustainable products retailer. The site features an intuitive user interface, seamless checkout process, and robust product filtering.",
-      results: "The new website increased online sales by 75% and reduced cart abandonment rates by 30%.",
+        "Nepal offers a Bachelor of Aviation Management (BAM) program, primarily through Kathmandu University in collaboration with Simrik Ventures and Siddhartha Vanasthali Institute. This four-year undergraduate program, affiliated with Kathmandu University, is designed to equip students with the skills and knowledge necessary to effectively manage aviation operations, airlines, and airports.",
+      results:
+        "Graduates of BAM in Nepal can pursue careers in airline and airport management, aviation safety, and aviation-related businesses globally.",
     },
     {
       id: 3,
-      title: "FreshBite Social Campaign",
-      category: "Social Media",
-      image: "/placeholder.svg?height=600&width=800&text=FreshBite+Campaign",
-      tags: ["Social Media Strategy", "Content Creation", "Influencer Marketing"],
+      title: "Rohit John Chettri",
+      category: "Artist Management",
+      image: "/RJC.jpg?height=600&width=800&text=FreshBite+Campaign",
+      tags: ["Collaboration", "Representation", "Celebrities"],
       description:
-        "Developed and executed a comprehensive social media campaign for FreshBite, a meal delivery service. The campaign included content creation, influencer partnerships, and targeted advertising.",
+        "Rohit John Chettri, a prominent Nepali singer-songwriter, is actively working on his upcoming project, Reborn. The project is currently ongoing, with updates shared on his official social media platforms.",
       results:
-        "The campaign generated over 2 million impressions, increased follower count by 45%, and drove a 60% increase in website traffic.",
+        "We are currently working on Reborn, an ongoing project by Rohit John Chettri, with updates available on his social media.",
     },
     {
       id: 4,
-      title: "GlobalTech SEO Optimization",
-      category: "Digital Marketing",
-      image: "/placeholder.svg?height=600&width=800&text=GlobalTech+SEO",
-      tags: ["SEO", "Content Strategy", "Analytics"],
+      title: "1974 AD Rock Yatra 2",
+      category: "Events",
+      image: "/1974.webp?height=600&width=800&text=GlobalTech+SEO",
+      tags: ["Concert", "Event Management"],
       description:
-        "Implemented a comprehensive SEO strategy for GlobalTech, including technical SEO improvements, content optimization, and backlink building.",
+        "On April 5, 2025, Nepali rock band 1974 AD celebrated their 30th anniversary with Rock Yatra 2 at Hyatt Ground, Bouddha, Kathmandu. The concert featured classic hits and tributes to Nepali music legends. ",
       results:
-        "Organic traffic increased by 120% within six months, with a 200% increase in lead generation from organic search.",
+        "Rock Yatra 2 reunited 1974 AD with 10,000 fans, marking a historic farewell and showcasing their musical legacy.",
     },
     {
       id: 5,
-      title: "Wellness Hub Content Strategy",
-      category: "Content Creation",
-      image: "/placeholder.svg?height=600&width=800&text=Wellness+Hub",
-      tags: ["Content Strategy", "Blog Management", "Email Marketing"],
+      title: "Gypsy Swing Patan",
+      category: "Hospitality",
+      image: "/gypsy.jpg?height=600&width=800&text=Wellness+Hub",
+      tags: ["Patan", "Heritage", "Gypsy"],
       description:
-        "Developed and implemented a comprehensive content strategy for Wellness Hub, including blog content, email newsletters, and downloadable resources.",
+        "Gypsy Swing Patan is a cozy café and live music venue located in Saugal, Patan, Nepal. It offers a unique blend of traditional Nepali dishes and beverages in a relaxed, artistic setting. The venue is renowned for its live Gypsy jazz performances, featuring local musicians like the Hot Club Patan Ensemble. These performances typically occur on Wednesdays and Fridays at 6:30 PM, providing an intimate atmosphere for music enthusiasts.",
       results:
-        "The content strategy increased website engagement by 85%, with email open rates improving from 15% to 32%.",
+        "Gypsy Swing Patan offers an intimate setting for enjoying live Gypsy jazz performances, delicious food, and a cozy atmosphere.",
     },
     {
       id: 6,
-      title: "Urban Styles Digital Campaign",
-      category: "Digital Marketing",
-      image: "/placeholder.svg?height=600&width=800&text=Urban+Styles",
-      tags: ["PPC", "Display Advertising", "Conversion Optimization"],
+      title: "Nepal Adarsha Awaisya Vidyalaya",
+      category: "Education",
+      image: "/NAAV.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["Management", "School", "Computer Science"],
+      description:
+        "Nepal Adarsha Awasiya Vidyalaya (NAAV) is a co-educational, English-medium private boarding school located in Bhandardhik, Pokhara-29. Established in 1996, it offers education from Montessori through Grade 12. The school is affiliated with the National Examinations Board (NEB) and provides +2 programs in Management, Science, and Humanities. Spanning 7.36 acres, NAAV boasts modern facilities including sports courts, a swimming pool, and a well-equipped science laboratory. Admission is based on an entrance examination and interview, with scholarships available on a need-cum-merit basis.",
+      results:
+        "NAAV offers quality education in a serene environment, emphasizing holistic development with modern amenities and diverse academic programs.",
+    },
+    {
+      id: 7,
+      title: "Ritvitz LIVE IN NEPAL",
+      category: "Events",
+      image: "/ritvitz.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["Concert", "Event Management"],
+      description:
+        "Ritviz, the Indian electronic music sensation, is set to perform in Kathmandu on June 14, 2025, at Club Omnia. The event is scheduled to begin at 9 PM. Organized by Khalti Events, this performance is part of the Holi celebrations, promising an electrifying night filled with Ritviz's signature blend of classical Hindustani music and modern electronic beats.",
+      results:
+        "The campaign achieved a 20% ROI, with a 45% decrease in cost per acquisition compared to previous campaigns.",
+    },
+    {
+      id: 8,
+      title: "Hot Club of Patan",
+      category: "Artist Management",
+      image: "/HCOP.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["Collaboration", "Representation", "Celebrities"],
       description:
         "Created and managed a multi-channel digital advertising campaign for Urban Styles, a fashion retailer targeting young urban professionals.",
       results:
         "The campaign achieved a 320% ROI, with a 45% decrease in cost per acquisition compared to previous campaigns.",
     },
-  ]
+    {
+      id: 9,
+      title: "Mid Valley International College",
+      category: "Education",
+      image: "/valley.webp?height=600&width=800&text=Urban+Styles",
+      tags: ["BBA", "BHM", "BIT"],
+      description:
+        "Mid-Valley International College (MVIC) is a private institution in Kathmandu, Nepal, established in 2011. Affiliated with HELP University, Malaysia, MVIC offers internationally recognized undergraduate programs approved by Nepal’s Ministry of Education.",
+      results:
+        "MVIC equips students with global career opportunities, blending academic excellence with industry exposure and international pathways.",
+    },
+    {
+      id: 10,
+      title: "Manu Chao Ultra Acoustico",
+      category: "Events",
+      image: "/manu.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["Concert", "Event Management"],
+      description:
+        "Manu Chao's Ultra Acústico tour made a memorable stop in Kathmandu on March 16, 2025, at Calm Restaurant & Bar. The intimate performance featured Chao's signature acoustic renditions, captivating the audience with his soulful music. The opening act, Joint Family Internationale, set the stage for an unforgettable evening.",
+      results:
+        "The Kathmandu concert was a sold-out success, showcasing Manu Chao's acoustic brilliance and the vibrant energy of Joint Family Internationale.",
+    },
+    {
+      id: 11,
+      title: "Privé",
+      category: "Business Development",
+      image: "/prive.webp?height=600&width=800&text=Urban+Styles",
+      tags: ["Club", "Soaltee Hotel", "Lounge"],
+      description:
+        "Privé Nepal, located within The Soaltee Kathmandu, is a premier nightclub offering an electrifying atmosphere with international DJs, themed events, and signature cocktails. Operating daily from 5 PM to 4 AM.",
+      results:
+        "Privé Nepal continues to be a vibrant nightlife destination in Kathmandu, hosting dynamic events and attracting both locals and tourists.",
+    },
+    {
+      id: 12,
+      title: "Bipul Chettri",
+      category: "Events",
+      image: "/bipul.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["Concert", "Event Management"],
+      description:
+        "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements. His debut album Sketches of Darjeeling (2014) gained widespread acclaim. Subsequent works include Maya (2016), Samaya (2021), and singles like Salala and Bahra Mahina (2024). He was nominated as a voting member of the Grammy Awards in 2022, becoming the first Nepali-speaking artist to join the Recording Academy",
+      results:
+        "Bipul Chettri's music resonates globally, blending Himalayan folk with modern sounds, earning him international recognition and Grammy membership.",
+    },
+    {
+      id: 13,
+      title: "Yalamul Garden ",
+      category: "Hospitality",
+      image: "/yalamul.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["Patan", "Hotel"],
+      description:
+        "Yalamul Garden is a boutique hotel in Patan, Nepal, located just 2 minutes from Patan Durbar Square. It offers 11 rooms with garden views, a rooftop terrace, and a cozy garden restaurant/bar. Guests can enjoy live Gypsy jazz every Friday, yoga classes, and a variety of cuisines including Indian, Nepalese, and Asian dishes.",
+      results:
+        "Yalamul Garden offers a serene stay near Patan Durbar Square, combining comfort, culture, and cuisine in a tranquil setting.",
+    },
+  ];
 
   const filteredProjects =
-    activeCategory === "All" ? projects : projects.filter((project) => project.category === activeCategory)
+    activeCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -91,7 +185,7 @@ export default function PortfolioGrid() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -100,7 +194,7 @@ export default function PortfolioGrid() {
       opacity: 1,
       transition: { duration: 0.5 },
     },
-  }
+  };
 
   return (
     <div>
@@ -143,7 +237,11 @@ export default function PortfolioGrid() {
                     </Badge>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, index) => (
-                        <Badge key={index} variant="outline" className="bg-primary/10">
+                        <Badge
+                          key={index}
+                          variant="outline"
+                          className="bg-primary/10"
+                        >
                           {tag}
                         </Badge>
                       ))}
@@ -153,11 +251,17 @@ export default function PortfolioGrid() {
               </DialogTrigger>
               <DialogContent className="max-w-3xl">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl">{project.title}</DialogTitle>
+                  <DialogTitle className="text-2xl">
+                    {project.title}
+                  </DialogTitle>
                   <div className="flex flex-wrap gap-2 mt-2">
                     <Badge variant="secondary">{project.category}</Badge>
                     {project.tags.map((tag, index) => (
-                      <Badge key={index} variant="outline" className="bg-primary/10">
+                      <Badge
+                        key={index}
+                        variant="outline"
+                        className="bg-primary/10"
+                      >
                         {tag}
                       </Badge>
                     ))}
@@ -184,5 +288,5 @@ export default function PortfolioGrid() {
         ))}
       </motion.div>
     </div>
-  )
+  );
 }

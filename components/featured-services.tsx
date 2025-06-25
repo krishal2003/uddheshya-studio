@@ -1,62 +1,77 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { Megaphone, LineChart, Palette, Globe, MessageSquare, Search } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import {
+  Megaphone,
+  LineChart,
+  Palette,
+  Globe,
+  MessageSquare,
+  Search,
+} from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function FeaturedServices() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const services = [
     {
       icon: <Megaphone className="h-10 w-10 text-primary" />,
-      title: "Digital Advertising",
+      title: "Event Promotion and Management",
       description:
-        "Strategic ad campaigns across multiple platforms to maximize your ROI and reach your target audience effectively.",
+        "Organizing and promoting successful events with a strategic marketing plan to drive engagement and attendance.",
       gradient: "from-primary/10 to-secondary/5",
       delay: 0,
     },
     {
       icon: <LineChart className="h-10 w-10 text-secondary" />,
-      title: "Analytics & Insights",
+      title: "Educational Campaign",
       description:
-        "Data-driven decision making with comprehensive analytics and actionable insights to optimize your marketing strategy.",
+        "Targeted campaigns designed to educate and inform your audience about important topics and services.",
       gradient: "from-secondary/10 to-tertiary/5",
       delay: 0.1,
     },
     {
       icon: <Palette className="h-10 w-10 text-tertiary" />,
-      title: "Brand Development",
+      title: "Social Media Handling",
       description:
-        "Create a compelling brand identity that resonates with your audience and sets you apart from competitors.",
+        "Comprehensive management of social media platforms to increase visibility, engagement, and brand loyalty.",
       gradient: "from-tertiary/10 to-primary/5",
       delay: 0.2,
     },
     {
       icon: <Globe className="h-10 w-10 text-primary" />,
-      title: "Web Development",
+      title: "Hospitality and Entertainment Marketing",
       description:
-        "Custom website solutions that combine stunning design with seamless functionality to enhance user experience.",
+        "Promoting hospitality and entertainment businesses through targeted strategies to attract and retain customers.",
       gradient: "from-primary/10 to-tertiary/5",
       delay: 0.3,
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-secondary" />,
-      title: "Social Media Management",
-      description: "Engage your audience with strategic content and community management across all social platforms.",
+      title: "Branding and Identity Development",
+      description:
+        "Building a unique and strong brand identity that resonates with your target market.",
       gradient: "from-secondary/10 to-primary/5",
       delay: 0.4,
     },
     {
       icon: <Search className="h-10 w-10 text-tertiary" />,
-      title: "SEO Optimization",
-      description: "Improve your online visibility and drive organic traffic with our comprehensive SEO strategies.",
+      title: "Web Development",
+      description:
+        "Developing custom websites that are visually appealing, user-friendly, and optimized for performance.",
       gradient: "from-tertiary/10 to-secondary/5",
       delay: 0.5,
     },
-  ]
+  ];
 
   return (
     <section
@@ -79,7 +94,10 @@ export default function FeaturedServices() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-hover" whileHover={{ scale: 1.02 }}>
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold mb-4 text-gradient-hover"
+            whileHover={{ scale: 1.02 }}
+          >
             Our Premium Services
           </motion.h2>
           <motion.p
@@ -88,8 +106,8 @@ export default function FeaturedServices() {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            We offer a comprehensive range of marketing services designed to help your business thrive in the digital
-            landscape.
+            We offer a comprehensive range of marketing services designed to
+            help your business thrive in the digital landscape.
           </motion.p>
         </motion.div>
 
@@ -98,7 +116,11 @@ export default function FeaturedServices() {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.9 }}
+              animate={
+                isInView
+                  ? { opacity: 1, y: 0, scale: 1 }
+                  : { opacity: 0, y: 50, scale: 0.9 }
+              }
               transition={{
                 duration: 0.6,
                 delay: service.delay,
@@ -139,7 +161,11 @@ export default function FeaturedServices() {
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100"
                   animate={{ x: ["-100%", "100%"] }}
-                  transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, repeatDelay: 3 }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Number.POSITIVE_INFINITY,
+                    repeatDelay: 3,
+                  }}
                 />
               </Card>
             </motion.div>
@@ -147,5 +173,5 @@ export default function FeaturedServices() {
         </div>
       </div>
     </section>
-  )
+  );
 }

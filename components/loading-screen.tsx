@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { motion, AnimatePresence } from "framer-motion"
-import { useEffect, useState } from "react"
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function LoadingScreen() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
+      setIsLoading(false);
+    }, 2000);
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <AnimatePresence>
@@ -36,7 +36,7 @@ export default function LoadingScreen() {
                 ease: "easeInOut",
               }}
             >
-              <span className="text-primary font-bold text-2xl">US</span>
+              <img src="SHORT.png" alt="" width="120px" />
             </motion.div>
 
             <motion.h1
@@ -44,9 +44,7 @@ export default function LoadingScreen() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-            >
-              UDDHESHYA STUDIO
-            </motion.h1>
+            ></motion.h1>
 
             <motion.div
               className="flex space-x-2 justify-center"
@@ -74,5 +72,5 @@ export default function LoadingScreen() {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }

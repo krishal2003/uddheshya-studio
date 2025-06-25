@@ -1,50 +1,51 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function TimelineSection() {
   const milestones = [
     {
-      year: "2015",
+      year: "Feb",
       title: "Company Founded",
       description:
         "UDDHESHYA STUDIO was founded with a vision to transform digital marketing through creativity and innovation.",
     },
     {
-      year: "2017",
-      title: "Expanded Services",
+      year: "March",
+      title: "Research Expansion",
       description:
-        "We expanded our service offerings to include web development, social media management, and content creation.",
+        "Expanded the research team to boost analysis, enhance insights, and drive data-informed strategies for client projects.",
     },
     {
-      year: "2019",
-      title: "National Recognition",
+      year: "April",
+      title: "Creative Expansion",
       description:
-        "UDDHESHYA STUDIO received national recognition for our innovative marketing campaigns and exceptional results.",
+        "The creative team has expanded to include specialized motion graphics and static graphics designers, enhancing our ability to deliver cutting-edge visual content.",
     },
     {
-      year: "2021",
-      title: "International Expansion",
+      year: "May",
+      title: "Technical Expansion",
       description:
-        "We expanded our operations internationally, serving clients across multiple countries and industries.",
+        "We expanded our technical department, serving clients websites and web apps as per their requirements.",
     },
     {
-      year: "2023",
-      title: "Technology Integration",
+      year: "June",
+      title: "Admin Expansion",
       description:
-        "We integrated advanced AI and data analytics capabilities to enhance our marketing strategies and deliver better results.",
+        "The administrative team was expanded to enhance operational efficiency, optimize processes, and improve support for both internal functions and client-facing tasks.",
     },
-  ]
+  ];
 
   return (
     <section className="py-16">
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
-          Our Journey
+          Our 2025 Journey
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Explore the key milestones that have shaped UDDHESHYA STUDIO into the company we are today.
+          Explore the key milestones that have shaped UDDHESHYA STUDIO into the
+          company we are today.
         </p>
       </div>
 
@@ -60,13 +61,23 @@ export default function TimelineSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-8`}
+              className={`flex flex-col ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } items-center gap-8`}
             >
-              <div className={`w-full md:w-5/12 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
+              <div
+                className={`w-full md:w-5/12 ${
+                  index % 2 === 0 ? "md:text-right" : "md:text-left"
+                }`}
+              >
                 <Card className="hover-card">
                   <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold mb-2">{milestone.title}</h3>
-                    <p className="text-muted-foreground">{milestone.description}</p>
+                    <h3 className="text-2xl font-bold mb-2">
+                      {milestone.title}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      {milestone.description}
+                    </p>
                   </CardContent>
                 </Card>
               </div>
@@ -84,5 +95,5 @@ export default function TimelineSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

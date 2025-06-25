@@ -1,15 +1,15 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Mona_Sans as FontSans } from "next/font/google"
-import "./globals.css"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import LoadingScreen from "@/components/loading-screen"
+import type React from "react";
+import type { Metadata } from "next";
+import { Mona_Sans as FontSans } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import LoadingScreen from "@/components/loading-screen";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
   title: "UDDHESHYA STUDIO | Redefining Marketing for the Digital Age",
@@ -35,20 +35,27 @@ export const metadata: Metadata = {
     title: "UDDHESHYA STUDIO | Redefining Marketing for the Digital Age",
     description: "Cutting-edge marketing solutions for businesses worldwide",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="short.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body className={`${fontSans.variable} font-sans antialiased cursor-premium`}>
+      <body
+        className={`${fontSans.variable} font-sans antialiased cursor-premium`}
+      >
         <LoadingScreen />
         <div className="flex min-h-screen flex-col">
           <Navbar />
@@ -57,5 +64,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  )
+  );
 }

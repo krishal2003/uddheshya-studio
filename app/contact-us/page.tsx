@@ -1,12 +1,13 @@
-import type { Metadata } from "next"
-import ContactForm from "@/components/contact-form"
-import ContactInfo from "@/components/contact-info"
-import Map from "@/components/map"
+import type { Metadata } from "next";
+import ContactForm from "@/components/contact-form";
+import ContactInfo from "@/components/contact-info";
+import Map from "@/components/map";
 
 export const metadata: Metadata = {
   title: "Contact Us | UDDHESHYA STUDIO",
-  description: "Get in touch with UDDHESHYA STUDIO for innovative marketing solutions tailored to your business needs.",
-}
+  description:
+    "Get in touch with UDDHESHYA STUDIO for innovative marketing solutions tailored to your business needs.",
+};
 
 export default function ContactPage() {
   return (
@@ -22,5 +23,5 @@ export default function ContactPage() {
         <Map />
       </div>
     </div>
-  )
+  );
 }

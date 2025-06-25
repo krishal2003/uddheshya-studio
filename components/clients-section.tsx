@@ -1,17 +1,18 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ClientsSection() {
   const clients = [
-    { name: "Company 1", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Company 2", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Company 3", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Company 4", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Company 5", logo: "/placeholder.svg?height=80&width=160" },
-    { name: "Company 6", logo: "/placeholder.svg?height=80&width=160" },
-  ]
+    { name: "Company 1", logo: "/vanasthali.png?height=80&width=160" },
+    { name: "Company 2", logo: "/valley.png?height=80&width=160" },
+    { name: "Company 3", logo: "/11.png?height=80&width=160" },
+    { name: "Company 4", logo: "/annapurna.png?height=80&width=160" },
+
+    { name: "Company 6", logo: "/1974AD.svg?height=80&width=160" },
+    { name: "Company 5", logo: "/KU.png?height=80&width=160" },
+  ];
 
   return (
     <section className="py-20">
@@ -21,7 +22,8 @@ export default function ClientsSection() {
             Trusted by Industry Leaders
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We've partnered with forward-thinking companies across various industries to drive exceptional results.
+            We've partnered with forward-thinking companies across various
+            industries to drive exceptional results.
           </p>
         </div>
 
@@ -39,12 +41,12 @@ export default function ClientsSection() {
                 alt={client.name}
                 width={160}
                 height={80}
-                className="opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="opacity-100 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

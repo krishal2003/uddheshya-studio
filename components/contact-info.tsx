@@ -1,18 +1,22 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Mail, MapPin, Phone, Clock } from "lucide-react"
-import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import Image from "next/image";
 
 export default function ContactInfo() {
   const contactDetails = [
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Address",
-      details: ["123 Marketing Avenue", "Creative District", "Innovation City, 10001"],
+      details: [
+        "Banepa, Kavrepalanchok",
+        "Creative District",
+        "Innovation City, 10001",
+      ],
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 765-4321"],
+      details: ["+977 9860471053", "+1 (555) 765-4321"],
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
@@ -22,9 +26,13 @@ export default function ContactInfo() {
     {
       icon: <Clock className="h-6 w-6 text-primary" />,
       title: "Business Hours",
-      details: ["Monday - Friday: 9am - 6pm", "Saturday: 10am - 4pm", "Sunday: Closed"],
+      details: [
+        "Monday - Friday: 9am - 5pm",
+        "Saturday: Closed",
+        "Sunday: Closed",
+      ],
     },
-  ]
+  ];
 
   return (
     <Card>
@@ -56,5 +64,5 @@ export default function ContactInfo() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

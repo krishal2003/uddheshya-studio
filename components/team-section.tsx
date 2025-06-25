@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
-import { Linkedin, Twitter } from "lucide-react"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { Linkedin, Twitter } from "lucide-react";
 
 export default function TeamSection() {
   const team = [
     {
       name: "Aditya Sharma",
-      position: "Founder & CEO",
+      position: "Creative Head",
       bio: "With over 15 years of experience in digital marketing, Aditya leads our team with vision and expertise.",
       image: "/placeholder.svg?height=400&width=400&text=Aditya+Sharma",
     },
     {
-      name: "Priya Patel",
-      position: "Creative Director",
+      name: "Aditya Sharma",
+      position: "Research Head",
       bio: "Priya brings creative excellence to every project, ensuring our clients' brands stand out in the market.",
       image: "/placeholder.svg?height=400&width=400&text=Priya+Patel",
     },
     {
-      name: "Rahul Verma",
-      position: "Head of Digital Strategy",
+      name: "Aditya Sharma",
+      position: "Admin Head",
       bio: "Rahul combines analytical thinking with creative problem-solving to develop effective marketing strategies.",
       image: "/placeholder.svg?height=400&width=400&text=Rahul+Verma",
     },
     {
-      name: "Ananya Singh",
-      position: "Lead Web Developer",
+      name: "Aditya Sharma",
+      position: "Technical Head",
       bio: "Ananya creates stunning, functional websites that deliver exceptional user experiences and drive conversions.",
       image: "/placeholder.svg?height=400&width=400&text=Ananya+Singh",
     },
-  ]
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -41,7 +41,7 @@ export default function TeamSection() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -50,7 +50,7 @@ export default function TeamSection() {
       opacity: 1,
       transition: { duration: 0.5 },
     },
-  }
+  };
 
   return (
     <section className="py-16">
@@ -59,7 +59,8 @@ export default function TeamSection() {
           Meet Our Team
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Our talented team of marketing experts is passionate about helping businesses grow.
+          Our talented team of marketing experts is passionate about helping
+          businesses grow.
         </p>
       </div>
 
@@ -107,5 +108,5 @@ export default function TeamSection() {
         ))}
       </motion.div>
     </section>
-  )
+  );
 }

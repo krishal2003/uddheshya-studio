@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
-import Link from "next/link"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function CtaSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
     <section ref={ref} className="py-20 relative overflow-hidden">
@@ -23,7 +23,11 @@ export default function CtaSection() {
             x: [0, 50, 0],
             y: [0, -30, 0],
           }}
-          transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          transition={{
+            duration: 8,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+          }}
         />
         <motion.div
           className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-white/5 rounded-full filter blur-3xl"
@@ -32,7 +36,12 @@ export default function CtaSection() {
             x: [0, -30, 0],
             y: [0, 20, 0],
           }}
-          transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 2 }}
+          transition={{
+            duration: 10,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+            delay: 2,
+          }}
         />
 
         {/* Floating sparkles */}
@@ -69,7 +78,9 @@ export default function CtaSection() {
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+            animate={
+              isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-6"
           >
@@ -91,7 +102,8 @@ export default function CtaSection() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Let's collaborate to create innovative marketing solutions that drive real results for your business.
+            Let's collaborate to create innovative marketing solutions that
+            drive real results for your business.
           </motion.p>
 
           <motion.div
@@ -101,7 +113,10 @@ export default function CtaSection() {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <Link href="/contact-us">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   size="lg"
                   className="text-lg px-8 bg-white text-primary hover:bg-white/90 btn-premium shadow-2xl hover:shadow-3xl transition-all duration-300 group"
@@ -113,13 +128,15 @@ export default function CtaSection() {
             </Link>
 
             <Link href="/services">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="text-lg px-8 border-white text-white hover:bg-white/20 btn-premium backdrop-blur-sm"
+                  className="text-lg px-8 bg-white text-primary hover:bg-white/90 btn-premium shadow-2xl hover:shadow-3xl transition-all duration-300 group"
                 >
-                  Learn More
+                  Learn More{" "}
                 </Button>
               </motion.div>
             </Link>
@@ -134,19 +151,21 @@ export default function CtaSection() {
           >
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-              <span className="text-sm">Trusted by 500+ Clients</span>
+              <span className="text-sm">Trusted by 20+ Clients</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-              <span className="text-sm">8+ Years Experience</span>
+              <span className="text-sm">10+ Services Provided</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-              <span className="text-sm">Award-Winning Agency</span>
+              <span className="text-sm">
+                Best Marketing Agency in Kathmandu
+              </span>
             </div>
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

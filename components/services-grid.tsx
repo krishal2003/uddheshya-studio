@@ -1,72 +1,101 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Megaphone, LineChart, Palette, Globe, MessageSquare, Search, Mail, Video, Camera, PenTool } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion";
+import {
+  Megaphone,
+  LineChart,
+  Palette,
+  Globe,
+  MessageSquare,
+  Search,
+  Mail,
+  Video,
+  Camera,
+  PenTool,
+} from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function ServicesGrid() {
   const services = [
     {
       icon: <Megaphone className="h-10 w-10 text-primary" />,
-      title: "Digital Advertising",
+      title: "Social Media Management",
       description:
-        "Strategic ad campaigns across multiple platforms to maximize your ROI and reach your target audience effectively. We specialize in PPC, display advertising, and retargeting campaigns.",
+        "Manage your social media platforms, create engaging posts, and increase your brand's presence online.",
     },
     {
       icon: <LineChart className="h-10 w-10 text-primary" />,
-      title: "Analytics & Insights",
+      title: "Content Creation (Reels, Design, Campaigns)",
       description:
-        "Data-driven decision making with comprehensive analytics and actionable insights to optimize your marketing strategy. We help you understand your audience and measure campaign performance.",
+        "Create engaging content for social media including reels, design work, and full-scale campaigns to connect with your audience.",
     },
     {
       icon: <Palette className="h-10 w-10 text-primary" />,
-      title: "Brand Development",
+      title: "Influencer & Community Marketing",
       description:
-        "Create a compelling brand identity that resonates with your audience and sets you apart from competitors. Our branding services include logo design, visual identity, and brand guidelines.",
+        "Partner with influencers and engage with communities to promote your brand and create authentic connections.",
     },
     {
       icon: <Globe className="h-10 w-10 text-primary" />,
-      title: "Web Development",
+      title: "Event Promotion & Coordination",
       description:
-        "Custom website solutions that combine stunning design with seamless functionality to enhance user experience. We build responsive, SEO-friendly websites that convert visitors into customers.",
+        "Coordinate and promote your events to ensure they reach the right audience and deliver successful outcomes.",
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-primary" />,
-      title: "Social Media Management",
+      title: "Podcast and YouTube Channel Production",
       description:
-        "Engage your audience with strategic content and community management across all social platforms. We help you build a strong social presence and meaningful connections with your audience.",
+        "Launch and manage your podcast or YouTube channel with professional production, editing, and marketing services.",
     },
     {
       icon: <Search className="h-10 w-10 text-primary" />,
-      title: "SEO Optimization",
+      title: "Hospitality and Entertainment Marketing",
       description:
-        "Improve your online visibility and drive organic traffic with our comprehensive SEO strategies. We optimize your website structure, content, and backlink profile to boost your search rankings.",
+        "Promote hospitality and entertainment businesses, helping you reach new customers through targeted campaigns.",
     },
     {
       icon: <Mail className="h-10 w-10 text-primary" />,
-      title: "Email Marketing",
+      title: "Paid Advertising & Media Buying",
       description:
-        "Create targeted email campaigns that nurture leads and drive conversions. We design, implement, and optimize email marketing strategies that deliver measurable results.",
+        "Create and manage effective paid ad campaigns across various media platforms to increase brand visibility and drive conversions.",
     },
     {
       icon: <Video className="h-10 w-10 text-primary" />,
-      title: "Video Production",
+      title: "Branding & Identity Development",
       description:
-        "Engage your audience with high-quality video content that tells your brand story. From concept to production, we create videos that captivate and convert.",
+        "Develop a strong brand identity that reflects your business values and connects with your target audience.",
     },
     {
       icon: <Camera className="h-10 w-10 text-primary" />,
-      title: "Photography",
+      title: "Web Design & SEO",
       description:
-        "Professional photography services to showcase your products, services, and team. We create visual assets that enhance your marketing materials and strengthen your brand image.",
+        "Design user-friendly websites optimized for SEO to help improve your online presence and drive organic traffic.",
     },
     {
       icon: <PenTool className="h-10 w-10 text-primary" />,
-      title: "Content Creation",
+      title: "Research and Analytics for Marketing Strategy",
       description:
-        "Compelling content that engages your audience and drives action. Our content creation services include blog posts, articles, whitepapers, case studies, and more.",
+        "Use data-driven insights to create effective marketing strategies that maximize your ROI and enhance brand performance.",
     },
-  ]
+    {
+      icon: <Megaphone className="h-10 w-10 text-primary" />,
+      title: "Educational Campaigns and Conference Management",
+      description:
+        "Organize and manage educational campaigns and conferences to deliver meaningful experiences and engage audiences effectively.",
+    },
+    {
+      icon: <LineChart className="h-10 w-10 text-primary" />,
+      title: "Music & Cultural Brand Promotion",
+      description:
+        "Promote cultural and music brands by leveraging targeted campaigns to reach the right audience and enhance brand recognition.",
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -76,7 +105,7 @@ export default function ServicesGrid() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -85,7 +114,7 @@ export default function ServicesGrid() {
       opacity: 1,
       transition: { duration: 0.5 },
     },
-  }
+  };
 
   return (
     <motion.div
@@ -103,11 +132,13 @@ export default function ServicesGrid() {
               <CardTitle className="text-xl">{service.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base">{service.description}</CardDescription>
+              <CardDescription className="text-base">
+                {service.description}
+              </CardDescription>
             </CardContent>
           </Card>
         </motion.div>
       ))}
     </motion.div>
-  )
+  );
 }

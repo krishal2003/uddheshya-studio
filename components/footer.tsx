@@ -1,5 +1,13 @@
-import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import Link from "next/link";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,24 +15,39 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-lg font-bold mb-4 text-primary">UDDHESHYA STUDIO</h3>
+            <h3 className="text-lg font-bold mb-4 text-primary">
+              <img src="logo.png" alt="" width="160px" />
+            </h3>
             <p className="text-muted-foreground mb-4">
-              Redefining marketing for the digital age with innovative strategies and creative solutions.
+              Redefining marketing for the digital age with innovative
+              strategies and creative solutions.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -35,32 +58,50 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 text-primary">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/portfolio"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about-us" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/about-us"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact-us" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/contact-us"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/company-profile" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/company-profile"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Company Profile
                 </Link>
               </li>
@@ -71,32 +112,50 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 text-primary">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Digital Advertising
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Brand Development
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Social Media Management
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   SEO Optimization
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link
+                  href="/services"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Analytics & Insights
                 </Link>
               </li>
@@ -109,16 +168,18 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-primary shrink-0 mt-0.5" />
                 <span className="text-muted-foreground">
-                  123 Marketing Avenue, Creative District, Innovation City, 10001
+                  Banepa, Kavrepalanchok{" "}
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+977 9860471053</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">info@uddheshyastudio.com</span>
+                <span className="text-muted-foreground">
+                  info@uddheshyastudio.com
+                </span>
               </li>
             </ul>
           </div>
@@ -127,16 +188,27 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} UDDHESHYA STUDIO. All rights reserved.
+              © {new Date().getFullYear()} UDDHESHYA STUDIO. All rights
+              reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
                 Terms of Service
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                href="https://maps.app.goo.gl/NrvAq4VkH7c1Nq3r6"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
+              >
                 Sitemap
               </Link>
             </div>
@@ -144,5 +216,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -44,18 +44,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-br from-primary/20 via-secondary/20 to-tertiary/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-xl lg:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary">
-                UDDHESHYA
-              </span>
-              <div className="text-xs text-tertiary font-medium tracking-wider">
-                STUDIO
-              </div>
-            </div>
-            {/* <img src="image.png" alt="" width="160px" /> */}
+            <img src="logo.png" alt="" width="160px" className="mt-4" />
           </Link>
 
           {/* Desktop Navigation */}
