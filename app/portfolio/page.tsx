@@ -1,11 +1,14 @@
-import type { Metadata } from "next"
-import PortfolioGrid from "@/components/portfolio-grid"
-import PortfolioHero from "@/components/portfolio-hero"
+// PortfolioPage.tsx
+
+import type { Metadata } from "next";
+import PortfolioGrid from "@/components/portfolio-grid";
+import PortfolioHero from "@/components/portfolio-hero";
 
 export const metadata: Metadata = {
   title: "Portfolio | UDDHESHYA STUDIO",
-  description: "Explore our portfolio of successful marketing campaigns and projects.",
-}
+  description:
+    "Explore our portfolio of successful marketing campaigns and projects.",
+};
 
 export default function PortfolioPage() {
   return (
@@ -13,5 +16,5 @@ export default function PortfolioPage() {
       <PortfolioHero />
       <PortfolioGrid />
     </div>
-  )
+  );
 }

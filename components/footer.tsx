@@ -30,16 +30,17 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link
+              {/* <Link
                 href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
-              </Link>
+              </Link> */}
               <Link
-                href="#"
+                href="https://www.instagram.com/studio.uddheshya?igsh=dndzZ2hxdGltaHlu"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                target="_blank"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
@@ -171,16 +172,20 @@ export default function Footer() {
                   Banepa, Kavrepalanchok{" "}
                 </span>
               </li>
-              <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">+977 9860471053</span>
-              </li>
-              <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">
-                  info@uddheshyastudio.com
-                </span>
-              </li>
+              <a href="tel:+9779860471053">
+                <li className="flex items-center mt-3">
+                  <Phone className="h-5 w-5 mr-2 text-primary" />
+                  <span className="text-muted-foreground">+977 9860471053</span>
+                </li>
+              </a>
+              <a href="mailto:uddheshyastudio@gmail.com">
+                <li className="flex items-center mt-3">
+                  <Mail className="h-5 w-5 mr-2 text-primary" />
+                  <span className="text-muted-foreground">
+                    uddheshyastudio@gmail.com{" "}
+                  </span>
+                </li>
+              </a>
             </ul>
           </div>
         </div>

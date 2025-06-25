@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 export default function TeamSection() {
   const team = [
@@ -12,24 +12,28 @@ export default function TeamSection() {
       position: "Creative Head",
       bio: "With over 15 years of experience in digital marketing, Aditya leads our team with vision and expertise.",
       image: "/placeholder.svg?height=400&width=400&text=Aditya+Sharma",
+      linkedin: "https://www.linkedin.com/in/adityasharma",
     },
     {
-      name: "Aditya Sharma",
+      name: "Priya Patel",
       position: "Research Head",
       bio: "Priya brings creative excellence to every project, ensuring our clients' brands stand out in the market.",
       image: "/placeholder.svg?height=400&width=400&text=Priya+Patel",
+      linkedin: "https://www.linkedin.com/in/priyapatel",
     },
     {
-      name: "Aditya Sharma",
+      name: "Rahul Verma",
       position: "Admin Head",
       bio: "Rahul combines analytical thinking with creative problem-solving to develop effective marketing strategies.",
       image: "/placeholder.svg?height=400&width=400&text=Rahul+Verma",
+      linkedin: "https://www.linkedin.com/in/rahulverma",
     },
     {
-      name: "Aditya Sharma",
+      name: "Ananya Singh",
       position: "Technical Head",
       bio: "Ananya creates stunning, functional websites that deliver exceptional user experiences and drive conversions.",
       image: "/placeholder.svg?height=400&width=400&text=Ananya+Singh",
+      linkedin: "https://www.linkedin.com/in/ananyasingh",
     },
   ];
 
@@ -88,18 +92,13 @@ export default function TeamSection() {
                 <p className="text-muted-foreground mb-4">{member.bio}</p>
                 <div className="flex space-x-3">
                   <a
-                    href="#"
+                    href={member.linkedin}
                     className="text-muted-foreground hover:text-primary transition-colors"
                     aria-label={`${member.name}'s LinkedIn profile`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Linkedin className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`${member.name}'s Twitter profile`}
-                  >
-                    <Twitter className="h-5 w-5" />
                   </a>
                 </div>
               </CardContent>

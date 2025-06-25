@@ -70,7 +70,7 @@ export default function Navbar() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/company-profile">
+            {/* <Link href="/company-profile">
               <Button
                 variant="outline"
                 size="sm"
@@ -78,7 +78,7 @@ export default function Navbar() {
               >
                 Company Profile
               </Button>
-            </Link>
+            </Link> */}
             <Link href="/contact-us">
               <Button
                 size="sm"

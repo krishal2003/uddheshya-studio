@@ -7,21 +7,17 @@ export default function ContactInfo() {
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Address",
-      details: [
-        "Banepa, Kavrepalanchok",
-        "Creative District",
-        "Innovation City, 10001",
-      ],
+      details: ["Banepa, Kavrepalanchok", "Office Headquarter"],
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      details: ["+977 9860471053", "+1 (555) 765-4321"],
+      details: ["+977 9860471053", "+977 9841325099"],
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      details: ["info@uddheshyastudio.com", "support@uddheshyastudio.com"],
+      details: ["uddheshyastudio@gmail.com", "info@uddheshyastudio.com"],
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,

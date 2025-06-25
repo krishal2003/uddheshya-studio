@@ -6,19 +6,19 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function TimelineSection() {
   const milestones = [
     {
-      year: "Feb",
+      year: "May",
       title: "Company Founded",
       description:
         "UDDHESHYA STUDIO was founded with a vision to transform digital marketing through creativity and innovation.",
     },
     {
-      year: "March",
+      year: "May",
       title: "Research Expansion",
       description:
         "Expanded the research team to boost analysis, enhance insights, and drive data-informed strategies for client projects.",
     },
     {
-      year: "April",
+      year: "May",
       title: "Creative Expansion",
       description:
         "The creative team has expanded to include specialized motion graphics and static graphics designers, enhancing our ability to deliver cutting-edge visual content.",
@@ -31,9 +31,9 @@ export default function TimelineSection() {
     },
     {
       year: "June",
-      title: "Admin Expansion",
+      title: "Event Expansion",
       description:
-        "The administrative team was expanded to enhance operational efficiency, optimize processes, and improve support for both internal functions and client-facing tasks.",
+        "We expanded our event management division, offering end-to-end solutions for corporate events, conferences, and exhibitions, ensuring seamless execution and client satisfaction.",
     },
   ];
 
