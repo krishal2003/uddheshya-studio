@@ -14,7 +14,7 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-16 md:py-24">
       <AboutHero />
       <ValuesSection />
-      <TeamSection />
+{/*       <TeamSection /> */}
       <TimelineSection />
     </div>
   )
