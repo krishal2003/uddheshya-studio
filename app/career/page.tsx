@@ -20,40 +20,54 @@ import {
 export default function CareersPage() {
   const jobOpenings = [
     {
-      title: "Senior Digital Marketing Specialist",
-      department: "Marketing",
-      location: "Remote",
-      type: "Full-time",
-      experience: "3-5 years",
-      description:
-        "Lead digital marketing campaigns and drive growth for our clients across multiple channels.",
-    },
-    {
-      title: "Creative Designer",
-      department: "Design",
-      location: "Hybrid",
-      type: "Full-time",
-      experience: "2-4 years",
-      description:
-        "Create stunning visual designs and brand identities that captivate audiences.",
-    },
-    {
-      title: "Frontend Developer",
-      department: "Development",
-      location: "Remote",
-      type: "Full-time",
-      experience: "2-3 years",
-      description:
-        "Build responsive and interactive web experiences using modern technologies.",
-    },
-    {
-      title: "Content Strategist",
-      department: "Content",
+      title: "Creative Head",
+      department: "Creative",
       location: "On-site",
-      type: "Full-time",
-      experience: "1-3 years",
+      type: "Contract",
+      experience: "3+ years",
       description:
-        "Develop compelling content strategies that engage and convert target audiences.",
+        "Lead and oversee creative direction, managing a team of designers and content creators.",
+      openings: 1,
+    },
+    {
+      title: "Researcher",
+      department: "Research",
+      location: "On-site",
+      type: "Probation",
+      experience: "Any",
+      description:
+        "Support research projects and contribute to content development through investigation and analysis.",
+      openings: 2,
+    },
+    {
+      title: "Graphic Designer (Static)",
+      department: "Design",
+      location: "On-site",
+      type: "Probation",
+      experience: "1-2 years",
+      description:
+        "Create compelling static visual content for digital and print use.",
+      openings: 3,
+    },
+    {
+      title: "Videographer",
+      department: "Production",
+      location: "On-site",
+      type: "Contract",
+      experience: "1+ year",
+      description:
+        "Capture high-quality footage and contribute to video storytelling.",
+      openings: 1,
+    },
+    {
+      title: "Video Editor",
+      department: "Post-Production",
+      location: "On-site",
+      type: "Probation",
+      experience: "1-2 years",
+      description:
+        "Edit video content for various platforms using modern tools and creative cuts.",
+      openings: 2,
     },
   ];
 
