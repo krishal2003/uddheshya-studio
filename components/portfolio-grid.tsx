@@ -12,6 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog";
 
 export default function PortfolioGrid() {
@@ -20,7 +21,6 @@ export default function PortfolioGrid() {
     "Events",
     "Education",
     "Hospitality",
-
     "Artist Management",
     "Business Development",
   ];
@@ -40,26 +40,26 @@ export default function PortfolioGrid() {
     },
     {
       id: 2,
-      title: "Bachelor of Aviation Management (BAM)",
+      title: "SVI- Undergrad Program",
       category: "Education",
       image: "/BAM.jpeg?height=600&width=800&text=EcoLife+E-commerce",
-      tags: ["Aviation", "Kathmandu University", "Siddhartha Vansthali"],
+      tags: ["Aviation", "Kathmandu University"],
       description:
-        "Nepal offers a Bachelor of Aviation Management (BAM) program, primarily through Kathmandu University in collaboration with Simrik Ventures and Siddhartha Vanasthali Institute. This four-year undergraduate program, affiliated with Kathmandu University, is designed to equip students with the skills and knowledge necessary to effectively manage aviation operations, airlines, and airports.",
+        "Nepal offers a Bachelor of Aviation Management (BAM) program, primarily through Kathmandu University in collaboration with Simrik Ventures and Siddhartha Vanasthali Institute. This four-year undergraduate program, affiliated with Kathmandu University, is designed to equip students with the skills and knowledge necessary to effectively manage aviation operations.",
       results:
         "Graduates of BAM in Nepal can pursue careers in airline and airport management, aviation safety, and aviation-related businesses globally.",
     },
-    {
-      id: 3,
-      title: "Rohit John Chettri",
-      category: "Artist Management",
-      image: "/RJC.jpg?height=600&width=800&text=FreshBite+Campaign",
-      tags: ["Collaboration", "Representation", "Celebrities"],
-      description:
-        "Rohit John Chettri, a prominent Nepali singer-songwriter, is actively working on his upcoming project, Reborn. The project is currently ongoing, with updates shared on his official social media platforms.",
-      results:
-        "We are currently working on Reborn, an ongoing project by Rohit John Chettri, with updates available on his social media.",
-    },
+    // {
+    //   id: 3,
+    //   title: "Rohit John Chettri",
+    //   category: "Artist Management",
+    //   image: "/RJC.jpg?height=600&width=800&text=FreshBite+Campaign",
+    //   tags: ["Collaboration", "Representation", "Celebrities"],
+    //   description:
+    //     "Rohit John Chettri, a prominent Nepali singer-songwriter, is actively working on his upcoming project, Reborn. The project is currently ongoing, with updates shared on his official social media platforms.",
+    //   results:
+    //     "We are currently working on Reborn, an ongoing project by Rohit John Chettri, with updates available on his social media.",
+    // },
     {
       id: 4,
       title: "1974 AD Rock Yatra 2",
@@ -84,12 +84,12 @@ export default function PortfolioGrid() {
     },
     {
       id: 6,
-      title: "Nepal Adarsha Awaisya Vidyalaya",
+      title: "NAAV",
       category: "Education",
       image: "/NAAV.jpg?height=600&width=800&text=Urban+Styles",
-      tags: ["Management", "School", "Computer Science"],
+      tags: ["Management", "Computer Science"],
       description:
-        "Nepal Adarsha Awasiya Vidyalaya (NAAV) is a co-educational, English-medium private boarding school located in Bhandardhik, Pokhara-29. Established in 1996, it offers education from Montessori through Grade 12. The school is affiliated with the National Examinations Board (NEB) and provides +2 programs in Management, Science, and Humanities. Spanning 7.36 acres, NAAV boasts modern facilities including sports courts, a swimming pool, and a well-equipped science laboratory. Admission is based on an entrance examination and interview, with scholarships available on a need-cum-merit basis.",
+        "Nepal Adarsha Awasiya Vidyalaya (NAAV) is a co-educational, English-medium private boarding school located in Bhandardhik, Pokhara-29. Established in 1996, it offers education from Montessori through Grade 12. The school is affiliated with the National Examinations Board (NEB) and provides +2 programs in Management, Science, and Humanities. Spanning 7.36 acres.",
       results:
         "NAAV offers quality education in a serene environment, emphasizing holistic development with modern amenities and diverse academic programs.",
     },
@@ -155,7 +155,7 @@ export default function PortfolioGrid() {
       image: "/bipul.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Concert", "Event Management"],
       description:
-        "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements. His debut album Sketches of Darjeeling (2014) gained widespread acclaim. Subsequent works include Maya (2016), Samaya (2021), and singles like Salala and Bahra Mahina (2024). He was nominated as a voting member of the Grammy Awards in 2022, becoming the first Nepali-speaking artist to join the Recording Academy",
+        "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements. His debut album Sketches of Darjeeling (2014) gained widespread acclaim. Subsequent works include Maya (2016), Samaya (2021), and singles like Salala and Bahra Mahina (2024). He was nominated as a voting member of the Grammy Awards.",
       results:
         "Bipul Chettri's music resonates globally, blending Himalayan folk with modern sounds, earning him international recognition and Grammy membership.",
     },
@@ -250,6 +250,10 @@ export default function PortfolioGrid() {
                 </Card>
               </DialogTrigger>
               <DialogContent className="max-w-3xl">
+                {/* Hiding default close button using inline style */}
+                <div className="absolute top-4 right-4">
+                  <button aria-label="Close" className="hidden" />
+                </div>
                 <DialogHeader>
                   <DialogTitle className="text-2xl">
                     {project.title}
