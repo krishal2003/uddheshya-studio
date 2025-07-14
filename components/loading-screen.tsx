@@ -36,7 +36,7 @@ export default function LoadingScreen() {
                 ease: "easeInOut",
               }}
             >
-              <img src="SHORT.png" alt="" width="120px" />
+              <img src="short.png" alt="" width="120px" />
             </motion.div>
 
             <motion.h1
