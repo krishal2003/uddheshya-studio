@@ -147,7 +147,7 @@ export default function CareersPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <a href="mailto:uddheshya@gmail.com">
+                  <a href="mailto:hr.uddheshya@gmail.com">
                     <Button className="bg-primary hover:bg-primary/90 text-primary-foreground btn-premium">
                       Apply Now
                     </Button>
