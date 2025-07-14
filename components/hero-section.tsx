@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Sparkles } from "lucide-react";
+import AnimatedStats from "./animated-stats";
 
 export default function HeroSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -133,7 +134,7 @@ export default function HeroSection() {
                 }}
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                Welcome to UDDHESHYA STUDIO
+                Welcome to UDDHESHYA GROUP
               </motion.span>
             </motion.div>
 
@@ -186,7 +187,7 @@ export default function HeroSection() {
               </span>
             </motion.div>
 
-            {/* Premium stats */}
+            {/* Premium stats
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -210,7 +211,8 @@ export default function HeroSection() {
                   <div className="text-sm text-tertiary">{stat.label}</div>
                 </motion.div>
               ))}
-            </motion.div>
+            </motion.div> */}
+            <AnimatedStats />
           </motion.div>
 
           {/* Enhanced Right side - Premium animated graphic */}
