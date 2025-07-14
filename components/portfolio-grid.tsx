@@ -34,7 +34,7 @@ export default function PortfolioGrid() {
       image: "/prateek.jpeg?height=600&width=800&text=TechVision+Rebrand",
       tags: ["Concert", "Event Management"],
       description:
-        "Prateek Kuhad's Silhouettes Tour in Nepal took place on October 26, 2024, at The Everest Hotel in Kathmandu. The concert featured his soulful indie-folk and acoustic music, including hits like Cold Mess, Kasoor, and Tum Jab Paas, alongside new tracks such as Mulaqat and I'm Someone New. Organized by Eleven11 and Khalti Events, the event offered fans an intimate musical experience.",
+        "Prateek Kuhad's Silhouettes Tour in Nepal took place on October 26, 2024, at The Everest Hotel in Kathmandu.",
       results:
         "Prateek Kuhad's Silhouettes Tour in Kathmandu delivered an intimate evening of soulful music, captivating fans with heartfelt performances.",
     },
@@ -45,7 +45,7 @@ export default function PortfolioGrid() {
       image: "/BAM.jpeg?height=600&width=800&text=EcoLife+E-commerce",
       tags: ["Aviation", "Kathmandu University"],
       description:
-        "Nepal offers a Bachelor of Aviation Management (BAM) program, primarily through Kathmandu University in collaboration with Simrik Ventures and Siddhartha Vanasthali Institute. This four-year undergraduate program, affiliated with Kathmandu University, is designed to equip students with the skills and knowledge necessary to effectively manage aviation operations.",
+        "Nepal offers a Bachelor of Aviation Management (BAM) program, primarily through Kathmandu University in collaboration with Simrik Ventures and Siddhartha Vanasthali Institute. ",
       results:
         "Graduates of BAM in Nepal can pursue careers in airline and airport management, aviation safety, and aviation-related businesses globally.",
     },
@@ -67,9 +67,9 @@ export default function PortfolioGrid() {
       image: "/1974.webp?height=600&width=800&text=GlobalTech+SEO",
       tags: ["Concert", "Event Management"],
       description:
-        "On April 5, 2025, Nepali rock band 1974 AD celebrated their 30th anniversary with Rock Yatra 2 at Hyatt Ground, Bouddha, Kathmandu. The concert featured classic hits and tributes to Nepali music legends. ",
+        "On April 5, 2025, Nepali rock band 1974 AD celebrated their 30th anniversary with Rock Yatra 2 at Hyatt Ground, Bouddha, Kathmandu.  ",
       results:
-        "Rock Yatra 2 reunited 1974 AD with 10,000 fans, marking a historic farewell and showcasing their musical legacy.",
+        "Rock Yatra 2 reunited 1974 AD with 10,000 fans.",
     },
     {
       id: 5,
@@ -78,7 +78,7 @@ export default function PortfolioGrid() {
       image: "/gypsy.jpg?height=600&width=800&text=Wellness+Hub",
       tags: ["Patan", "Heritage", "Gypsy"],
       description:
-        "Gypsy Swing Patan is a cozy café and live music venue located in Saugal, Patan, Nepal. It offers a unique blend of traditional Nepali dishes and beverages in a relaxed, artistic setting. The venue is renowned for its live Gypsy jazz performances, featuring local musicians like the Hot Club Patan Ensemble. These performances typically occur on Wednesdays and Fridays at 6:30 PM, providing an intimate atmosphere for music enthusiasts.",
+        "Gypsy Swing Patan is a cozy café and live music venue located in Saugal, Patan, Nepal.",
       results:
         "Gypsy Swing Patan offers an intimate setting for enjoying live Gypsy jazz performances, delicious food, and a cozy atmosphere.",
     },
@@ -89,7 +89,7 @@ export default function PortfolioGrid() {
       image: "/NAAV.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Management", "Computer Science"],
       description:
-        "Nepal Adarsha Awasiya Vidyalaya (NAAV) is a co-educational, English-medium private boarding school located in Bhandardhik, Pokhara-29. Established in 1996, it offers education from Montessori through Grade 12. The school is affiliated with the National Examinations Board (NEB) and provides +2 programs in Management, Science, and Humanities. Spanning 7.36 acres.",
+        "Nepal Adarsha Awasiya Vidyalaya (NAAV) is a co-educational, English-medium private boarding school located in Bhandardhik, Pokhara-29. ",
       results:
         "NAAV offers quality education in a serene environment, emphasizing holistic development with modern amenities and diverse academic programs.",
     },
@@ -100,7 +100,7 @@ export default function PortfolioGrid() {
       image: "/ritvitz.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Concert", "Event Management"],
       description:
-        "Ritviz, the Indian electronic music sensation, is set to perform in Kathmandu on June 14, 2025, at Club Omnia. The event is scheduled to begin at 9 PM. Organized by Khalti Events, this performance is part of the Holi celebrations, promising an electrifying night filled with Ritviz's signature blend of classical Hindustani music and modern electronic beats.",
+        "Ritviz, the Indian electronic music sensation, is set to perform in Kathmandu on June 14, 2025, at Club Omnia.",
       results:
         "The campaign achieved a 20% ROI, with a 45% decrease in cost per acquisition compared to previous campaigns.",
     },
@@ -122,7 +122,7 @@ export default function PortfolioGrid() {
       image: "/valley.webp?height=600&width=800&text=Urban+Styles",
       tags: ["BBA", "BHM", "BIT"],
       description:
-        "Mid-Valley International College (MVIC) is a private institution in Kathmandu, Nepal, established in 2011. Affiliated with HELP University, Malaysia, MVIC offers internationally recognized undergraduate programs approved by Nepal’s Ministry of Education.",
+        "Mid-Valley International College (MVIC) is a private institution in Kathmandu, Nepal, established in 2011. ",
       results:
         "MVIC equips students with global career opportunities, blending academic excellence with industry exposure and international pathways.",
     },
@@ -133,7 +133,7 @@ export default function PortfolioGrid() {
       image: "/manu.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Concert", "Event Management"],
       description:
-        "Manu Chao's Ultra Acústico tour made a memorable stop in Kathmandu on March 16, 2025, at Calm Restaurant & Bar. The intimate performance featured Chao's signature acoustic renditions, captivating the audience with his soulful music. The opening act, Joint Family Internationale, set the stage for an unforgettable evening.",
+        "Manu Chao's Ultra Acústico tour made a memorable stop in Kathmandu on March 16, 2025, at Calm Restaurant & Bar. ",
       results:
         "The Kathmandu concert was a sold-out success, showcasing Manu Chao's acoustic brilliance and the vibrant energy of Joint Family Internationale.",
     },
@@ -144,7 +144,7 @@ export default function PortfolioGrid() {
       image: "/prive.webp?height=600&width=800&text=Urban+Styles",
       tags: ["Club", "Soaltee Hotel", "Lounge"],
       description:
-        "Privé Nepal, located within The Soaltee Kathmandu, is a premier nightclub offering an electrifying atmosphere with international DJs, themed events, and signature cocktails. Operating daily from 5 PM to 4 AM.",
+        "Privé Nepal, located within The Soaltee Kathmandu, is a premier nightclub offering an electrifying atmosphere with international DJs, themed events.",
       results:
         "Privé Nepal continues to be a vibrant nightlife destination in Kathmandu, hosting dynamic events and attracting both locals and tourists.",
     },
@@ -155,7 +155,7 @@ export default function PortfolioGrid() {
       image: "/bipul.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Concert", "Event Management"],
       description:
-        "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements. His debut album Sketches of Darjeeling (2014) gained widespread acclaim. Subsequent works include Maya (2016), Samaya (2021), and singles like Salala and Bahra Mahina (2024). He was nominated as a voting member of the Grammy Awards.",
+        "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements.",
       results:
         "Bipul Chettri's music resonates globally, blending Himalayan folk with modern sounds, earning him international recognition and Grammy membership.",
     },
@@ -166,7 +166,7 @@ export default function PortfolioGrid() {
       image: "/yalamul.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Patan", "Hotel"],
       description:
-        "Yalamul Garden is a boutique hotel in Patan, Nepal, located just 2 minutes from Patan Durbar Square. It offers 11 rooms with garden views, a rooftop terrace, and a cozy garden restaurant/bar. Guests can enjoy live Gypsy jazz every Friday, yoga classes, and a variety of cuisines including Indian, Nepalese, and Asian dishes.",
+        "Yalamul Garden is a boutique hotel in Patan, Nepal, located just 2 minutes from Patan Durbar Square. ",
       results:
         "Yalamul Garden offers a serene stay near Patan Durbar Square, combining comfort, culture, and cuisine in a tranquil setting.",
     },
