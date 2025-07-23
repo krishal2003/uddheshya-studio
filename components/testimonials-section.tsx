@@ -16,13 +16,13 @@ export default function TestimonialsSection() {
       position: "Lead Vocalist & Drummer, 1974 AD",
       avatar: "/adrian.jpg?height=80&width=80&text=SJ",
     },
-    {
-      quote:
-        "Launching Nepal’s first Bachelor in Aviation Management (BAM) demanded strategic positioning. This agency crafted a nationwide campaign highlighting our KU affiliation and Annapurna Ventures’ industry network. They orchestrated open-house events at Banepa campus, driving 500+ qualified inquiries via targeted digital ads and aviation career webinars. Their guerrilla marketing included airport pop-ups showcasing VR simulations of air traffic control roles. Enrollment hit 100% capacity (33 seats) within 3 weeks, with 40% of students securing internships at Himalayan Airlines—proof they turn academic visions into tangible careers.",
-      author: "Rameshwor Thapa",
-      position: "Chairman, Annapurna Ventures",
-      avatar: "/thapa.jpg?height=80&width=80&text=MC",
-    },
+    // {
+    //   quote:
+    //     "Launching Nepal’s first Bachelor in Aviation Management (BAM) demanded strategic positioning. This agency crafted a nationwide campaign highlighting our KU affiliation and Annapurna Ventures’ industry network. They orchestrated open-house events at Banepa campus, driving 500+ qualified inquiries via targeted digital ads and aviation career webinars. Their guerrilla marketing included airport pop-ups showcasing VR simulations of air traffic control roles. Enrollment hit 100% capacity (33 seats) within 3 weeks, with 40% of students securing internships at Himalayan Airlines—proof they turn academic visions into tangible careers.",
+    //   author: "Rameshwor Thapa",
+    //   position: "Chairman, Annapurna Ventures",
+    //   avatar: "/thapa.jpg?height=80&width=80&text=MC",
+    // },
     {
       quote:
         "HCOP’s jazz manouche revival—blending Django Reinhardt with Narayan Gopal classics—needed niche audience growth. The agency engineered a 3-phase plan: First, they produced our debut EP launch at Patan Museum, fusing jazz improvisation with Nepali sarangi. Then, they leveraged digital storytelling, creating mini-docs about 'translating 70s pop into swing.' Finally, they secured NPR 1.2M in grants from cultural foundations by framing HCOP as 'custodians of heritage innovation.' Our Spotify streams grew 300%, and we’re now headlining international jazz fests in Bhutan and India, showcasing the global appeal of our unique sound.",
