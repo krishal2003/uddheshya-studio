@@ -32,7 +32,7 @@ export default function VideoSection() {
         loop
         muted
       >
-        <source src="/video.webm" type="video/webm" />
+        <source src="/web.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
