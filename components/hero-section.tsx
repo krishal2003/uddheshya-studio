@@ -137,7 +137,6 @@ export default function HeroSection() {
                 Welcome to UDDHESHYA GROUP
               </motion.span>
             </motion.div>
-
             <motion.h1
               className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 30 }}
@@ -169,7 +168,6 @@ export default function HeroSection() {
                 Digital Age
               </motion.span>
             </motion.h1>
-
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -186,8 +184,33 @@ export default function HeroSection() {
                 Innovation • Creativity • Results
               </span>
             </motion.div>
-
             {/* Premium stats
+<<<<<<< HEAD
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="grid grid-cols-3 gap-6 mb-8"
+              >
+                {[
+                  { number: "40+", label: "Projects" },
+                  { number: "20+", label: "Clients" },
+                  { number: "10+", label: "Services" },
+                ].map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    className="text-center"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <div className="text-2xl font-bold text-primary">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-tertiary">{stat.label}</div>
+                  </motion.div>
+                ))}
+              </motion.div> */}
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -211,8 +234,7 @@ export default function HeroSection() {
                   <div className="text-sm text-tertiary">{stat.label}</div>
                 </motion.div>
               ))}
-            </motion.div> */}
-            <AnimatedStats />
+            </motion.div>
           </motion.div>
 
           {/* Enhanced Right side - Premium animated graphic */}
