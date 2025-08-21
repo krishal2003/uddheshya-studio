@@ -98,14 +98,14 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-              <li>
+{/*               <li>
                 <Link
                   href="/company-profile"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Company Profile
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
