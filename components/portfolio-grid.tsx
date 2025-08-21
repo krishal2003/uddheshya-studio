@@ -18,26 +18,26 @@ import {
 export default function PortfolioGrid() {
   const categories = [
     "All",
-    "Events",
+    // "Events",
     "Education",
     "Hospitality",
     "Artist Management",
-    "Business Development",
+    // "Business Development",
   ];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
-    {
-      id: 1,
-      title: "Prateek Kuhad Silhouettes Tour",
-      category: "Events",
-      image: "/prateek.jpeg?height=600&width=800&text=TechVision+Rebrand",
-      tags: ["Concert", "Event Management"],
-      description:
-        "Prateek Kuhad's Silhouettes Tour in Nepal took place on October 26, 2024, at The Everest Hotel in Kathmandu.",
-      results:
-        "Prateek Kuhad's Silhouettes Tour in Kathmandu delivered an intimate evening of soulful music, captivating fans with heartfelt performances.",
-    },
+    // {
+    //   id: 1,
+    //   title: "Prateek Kuhad Silhouettes Tour",
+    //   category: "Events",
+    //   image: "/prateek.jpeg?height=600&width=800&text=TechVision+Rebrand",
+    //   tags: ["Concert", "Event Management"],
+    //   description:
+    //     "Prateek Kuhad's Silhouettes Tour in Nepal took place on October 26, 2024, at The Everest Hotel in Kathmandu.",
+    //   results:
+    //     "Prateek Kuhad's Silhouettes Tour in Kathmandu delivered an intimate evening of soulful music, captivating fans with heartfelt performances.",
+    // },
     {
       id: 2,
       title: "SVI- Undergrad Program",
@@ -60,17 +60,16 @@ export default function PortfolioGrid() {
     //   results:
     //     "We are currently working on Reborn, an ongoing project by Rohit John Chettri, with updates available on his social media.",
     // },
-    {
-      id: 4,
-      title: "1974 AD Rock Yatra 2",
-      category: "Events",
-      image: "/1974.webp?height=600&width=800&text=GlobalTech+SEO",
-      tags: ["Concert", "Event Management"],
-      description:
-        "On April 5, 2025, Nepali rock band 1974 AD celebrated their 30th anniversary with Rock Yatra 2 at Hyatt Ground, Bouddha, Kathmandu.  ",
-      results:
-        "Rock Yatra 2 reunited 1974 AD with 10,000 fans.",
-    },
+    // {
+    //   id: 4,
+    //   title: "1974 AD Rock Yatra 2",
+    //   category: "Events",
+    //   image: "/1974.webp?height=600&width=800&text=GlobalTech+SEO",
+    //   tags: ["Concert", "Event Management"],
+    //   description:
+    //     "On April 5, 2025, Nepali rock band 1974 AD celebrated their 30th anniversary with Rock Yatra 2 at Hyatt Ground, Bouddha, Kathmandu.  ",
+    //   results: "Rock Yatra 2 reunited 1974 AD with 10,000 fans.",
+    // },
     {
       id: 5,
       title: "Gypsy Swing Patan",
@@ -93,17 +92,17 @@ export default function PortfolioGrid() {
       results:
         "NAAV offers quality education in a serene environment, emphasizing holistic development with modern amenities and diverse academic programs.",
     },
-    {
-      id: 7,
-      title: "Ritvitz LIVE IN NEPAL",
-      category: "Events",
-      image: "/ritvitz.jpg?height=600&width=800&text=Urban+Styles",
-      tags: ["Concert", "Event Management"],
-      description:
-        "Ritviz, the Indian electronic music sensation, is set to perform in Kathmandu on June 14, 2025, at Club Omnia.",
-      results:
-        "The campaign achieved a 20% ROI, with a 45% decrease in cost per acquisition compared to previous campaigns.",
-    },
+    // {
+    //   id: 7,
+    //   title: "Ritvitz LIVE IN NEPAL",
+    //   category: "Events",
+    //   image: "/ritvitz.jpg?height=600&width=800&text=Urban+Styles",
+    //   tags: ["Concert", "Event Management"],
+    //   description:
+    //     "Ritviz, the Indian electronic music sensation, is set to perform in Kathmandu on June 14, 2025, at Club Omnia.",
+    //   results:
+    //     "The campaign achieved a 20% ROI, with a 45% decrease in cost per acquisition compared to previous campaigns.",
+    // },
     {
       id: 8,
       title: "Hot Club of Patan",
@@ -128,48 +127,60 @@ export default function PortfolioGrid() {
     },
     {
       id: 10,
-      title: "Manu Chao Ultra Acoustico",
-      category: "Events",
-      image: "/manu.jpg?height=600&width=800&text=Urban+Styles",
-      tags: ["Concert", "Event Management"],
+      title: "GATE College",
+      category: "Education",
+      image: "/gate.jpg?height=600&width=800&text=Urban+Styles",
+      tags: ["BIHM", "BHM", "BPH"],
       description:
-        "Manu Chao's Ultra Acústico tour made a memorable stop in Kathmandu on March 16, 2025, at Calm Restaurant & Bar. ",
+        "Worked with GATE College to organize their Open House event, managing online promotion and coordinating activities on the event day. Also supported them on several other projects.",
       results:
-        "The Kathmandu concert was a sold-out success, showcasing Manu Chao's acoustic brilliance and the vibrant energy of Joint Family Internationale.",
+        "Helped GATE College increase visibility and engagement through digital promotion, while ensuring a smooth and well-managed Open House experience.",
     },
-    {
-      id: 11,
-      title: "Privé",
-      category: "Business Development",
-      image: "/prive.webp?height=600&width=800&text=Urban+Styles",
-      tags: ["Club", "Soaltee Hotel", "Lounge"],
-      description:
-        "Privé Nepal, located within The Soaltee Kathmandu, is a premier nightclub offering an electrifying atmosphere with international DJs, themed events.",
-      results:
-        "Privé Nepal continues to be a vibrant nightlife destination in Kathmandu, hosting dynamic events and attracting both locals and tourists.",
-    },
-    {
-      id: 12,
-      title: "Bipul Chettri",
-      category: "Events",
-      image: "/bipul.jpg?height=600&width=800&text=Urban+Styles",
-      tags: ["Concert", "Event Management"],
-      description:
-        "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements.",
-      results:
-        "Bipul Chettri's music resonates globally, blending Himalayan folk with modern sounds, earning him international recognition and Grammy membership.",
-    },
-    {
-      id: 13,
-      title: "Yalamul Garden ",
-      category: "Hospitality",
-      image: "/yalamul.jpg?height=600&width=800&text=Urban+Styles",
-      tags: ["Patan", "Hotel"],
-      description:
-        "Yalamul Garden is a boutique hotel in Patan, Nepal, located just 2 minutes from Patan Durbar Square. ",
-      results:
-        "Yalamul Garden offers a serene stay near Patan Durbar Square, combining comfort, culture, and cuisine in a tranquil setting.",
-    },
+
+    // {
+    //   id: 10,
+    //   title: "Manu Chao Ultra Acoustico",
+    //   category: "Events",
+    //   image: "/manu.jpg?height=600&width=800&text=Urban+Styles",
+    //   tags: ["Concert", "Event Management"],
+    //   description:
+    //     "Manu Chao's Ultra Acústico tour made a memorable stop in Kathmandu on March 16, 2025, at Calm Restaurant & Bar. ",
+    //   results:
+    //     "The Kathmandu concert was a sold-out success, showcasing Manu Chao's acoustic brilliance and the vibrant energy of Joint Family Internationale.",
+    // },
+    // {
+    //   id: 11,
+    //   title: "Privé",
+    //   category: "Business Development",
+    //   image: "/prive.webp?height=600&width=800&text=Urban+Styles",
+    //   tags: ["Club", "Soaltee Hotel", "Lounge"],
+    //   description:
+    //     "Privé Nepal, located within The Soaltee Kathmandu, is a premier nightclub offering an electrifying atmosphere with international DJs, themed events.",
+    //   results:
+    //     "Privé Nepal continues to be a vibrant nightlife destination in Kathmandu, hosting dynamic events and attracting both locals and tourists.",
+    // },
+    // {
+    //   id: 12,
+    //   title: "Bipul Chettri",
+    //   category: "Events",
+    //   image: "/bipul.jpg?height=600&width=800&text=Urban+Styles",
+    //   tags: ["Concert", "Event Management"],
+    //   description:
+    //     "Bipul Chettri is an Indian singer-songwriter from Kalimpong, India, known for blending Nepali folk with contemporary elements.",
+    //   results:
+    //     "Bipul Chettri's music resonates globally, blending Himalayan folk with modern sounds, earning him international recognition and Grammy membership.",
+    // },
+    // {
+    //   id: 13,
+    //   title: "Yalamul Garden ",
+    //   category: "Hospitality",
+    //   image: "/yalamul.jpg?height=600&width=800&text=Urban+Styles",
+    //   tags: ["Patan", "Hotel"],
+    //   description:
+    //     "Yalamul Garden is a boutique hotel in Patan, Nepal, located just 2 minutes from Patan Durbar Square. ",
+    //   results:
+    //     "Yalamul Garden offers a serene stay near Patan Durbar Square, combining comfort, culture, and cuisine in a tranquil setting.",
+    // },
   ];
 
   const filteredProjects =
