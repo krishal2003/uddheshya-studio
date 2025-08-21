@@ -9,13 +9,13 @@ import Image from "next/image";
 
 export default function TestimonialsSection() {
   const testimonials = [
-    {
-      quote:
-        "As we closed our 30-year legacy with Rock Yatra 2, we needed a partner who understood the emotional weight of Nepal’s 'Antim Yatra' (final journey). Uddheshya Studio transformed our vision into a historic reality: securing the Hyatt Grounds in Bouddha, managing 10,000+ fans, and creating a seamless fusion of nostalgia and rock energy. Their team handled everything from safety protocols to multimedia tributes for icons like Narayan Gopal and Bhakta Raj Acharya. The event trended nationally, with live clips of 'Mutu Bhari' and 'Nepali Ho' hitting 2M+ views. They didn’t just organize a concert—they cemented our legacy.",
-      author: "Adrian Pradhan",
-      position: "Lead Vocalist & Drummer, 1974 AD",
-      avatar: "/adrian.jpg?height=80&width=80&text=SJ",
-    },
+    // {
+    //   quote:
+    //     "As we closed our 30-year legacy with Rock Yatra 2, we needed a partner who understood the emotional weight of Nepal’s 'Antim Yatra' (final journey). Uddheshya Studio transformed our vision into a historic reality: securing the Hyatt Grounds in Bouddha, managing 10,000+ fans, and creating a seamless fusion of nostalgia and rock energy. Their team handled everything from safety protocols to multimedia tributes for icons like Narayan Gopal and Bhakta Raj Acharya. The event trended nationally, with live clips of 'Mutu Bhari' and 'Nepali Ho' hitting 2M+ views. They didn’t just organize a concert—they cemented our legacy.",
+    //   author: "Adrian Pradhan",
+    //   position: "Lead Vocalist & Drummer, 1974 AD",
+    //   avatar: "/adrian.jpg?height=80&width=80&text=SJ",
+    // },
     // {
     //   quote:
     //     "Launching Nepal’s first Bachelor in Aviation Management (BAM) demanded strategic positioning. This agency crafted a nationwide campaign highlighting our KU affiliation and Annapurna Ventures’ industry network. They orchestrated open-house events at Banepa campus, driving 500+ qualified inquiries via targeted digital ads and aviation career webinars. Their guerrilla marketing included airport pop-ups showcasing VR simulations of air traffic control roles. Enrollment hit 100% capacity (33 seats) within 3 weeks, with 40% of students securing internships at Himalayan Airlines—proof they turn academic visions into tangible careers.",
